@@ -32,6 +32,9 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("org.springframework.boot:spring-boot-starter-web:3.3.4")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.3.4")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.3.4")
+    testImplementation("com.h2database:h2:2.3.232")
 }
 
 tasks.withType<Test> {
