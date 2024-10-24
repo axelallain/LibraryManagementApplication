@@ -11,15 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
 
-    private final BookRepository bookRepository;
+    private final Service service;
 
-    public Controller(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
+    public Controller(Service service) {
+        this.service = service;
     }
 
     @PostMapping("/book")
     public ResponseEntity<Book> addBook(@RequestBody Book book) {
-        Book newBook = bookRepository.save(book);
+        Book newBook = service.save(book);
         return new ResponseEntity<>(newBook, HttpStatus.CREATED);
     }
 }
