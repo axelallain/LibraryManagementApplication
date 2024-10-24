@@ -1,8 +1,12 @@
 package fr.axelallain.storageservice.entities;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 public class Book {
 
     @Id
@@ -18,36 +22,4 @@ public class Book {
     private User loaner;
 
     public Book() {}
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public User getLoaner() {
-        return loaner;
-    }
-
-    public void setLoaner(User loaner) {
-        this.loaner = loaner;
-    }
 }
