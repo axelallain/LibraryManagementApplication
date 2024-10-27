@@ -10,7 +10,7 @@ import java.util.Date;
 @Entity
 @Getter
 @Setter
-public class User {
+public class Loaner {
 
     @Id
     private Long id;
@@ -19,5 +19,5 @@ public class User {
 
     private Date creationDate;
 
-    public User() {}
+    public Loaner() {}
 }

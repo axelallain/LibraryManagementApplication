@@ -19,7 +19,7 @@ public class Book {
 
     @ManyToOne
     @JoinColumn(name = "loaner_id")
-    private User loaner;
+    private Loaner loaner;
 
     public Book() {}
 }
